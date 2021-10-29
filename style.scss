@@ -1,0 +1,110 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+@import '_navbar.scss';
+@import '_footer.scss';
+/*@use does not work */
+
+/* This CSS will print because %message-shared is extended. this is a silent or placeholder class, it's processed by Sass only when it's needed (extended) */
+%message-shared {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+body {
+  &:hover {
+    opacity: .88;
+  }
+}
+
+section.main {
+  @include dots;
+
+  h1 {
+    font-size: 100/50 * 1.4em;
+    /*some math*/
+    padding-top: 30;
+    padding-bottom: 20;
+    font-family: Fruktur;
+
+    &:nth-child(1) {
+      color: burlywood;
+
+      &:hover {
+        transform: scale(1.15);
+        transition: 2.5s ease;
+        background: $grad1;
+        padding: 2px;
+      }
+
+      &::after {
+        content: '!!';
+      }
+    }
+  }
+
+  ul {
+    li {
+      a {
+        color: $black;
+
+        &:hover {
+          font-size: larger;
+          font-weight: bolder;
+        }
+
+      }
+    }
+  }
+
+
+  ul.oceans {
+    li {
+      margin-bottom: 10px;
+
+      a {
+        &:hover {
+          font-size: larger;
+          font-weight: bolder;
+          color: white;
+          font-variant: small-caps;
+
+        }
+      }
+
+    }
+  }
+
+  a.click-me {
+    margin-left: 10px;
+  }
+
+  .column2 img {
+    padding: 8px;
+    border-radius: 15px;
+
+    &:hover {
+      filter: blur(1px);
+      opacity: .85;
+      transform: scale(1.10);
+      transition: .8s ease;
+    }
+  }
+
+  .column3 {
+    background-color: lightblue;
+
+    &:hover {
+      opacity: .88;
+      width: 360;
+      padding: 10px;
+      transition: .6s ease;
+    }
+
+    img {
+      &:hover {
+        filter: invert(1);
+      }
+    }
+  }
+}

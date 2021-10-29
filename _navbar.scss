@@ -1,0 +1,26 @@
+body {
+    nav {
+        background-color: burlywood;
+        margin-top: 20px;
+        border-radius: $border-radius;
+        // transform: scale(1.15);
+        filter: blur(.3px);
+
+        a {
+            &:hover {
+                @include anchor-nav-hover(lightgrey);
+                transition: .8s ease;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+        .navbar-toggler{
+            @media screen and (max-width:410px) {
+                position: relative;
+                left: 90px;
+                top: 6px;
+            }
+        }
+    }
+}
+

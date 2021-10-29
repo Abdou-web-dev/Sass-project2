@@ -1,0 +1,49 @@
+@mixin anchor-nav-hover($border-color:grey) {
+  border: 1px solid $border-color;
+  padding: $padding-standard;
+  box-shadow: $box-shadow;
+  border-radius: $border-radius;
+}
+
+@mixin dots-animation {
+  width: 15px;
+  height: 15;
+  margin: 0 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  animation-name: jumpingDots;
+  animation-duration: 1.4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+
+@mixin dots {
+  .ellipsis {
+    span.dot1 {
+      @include dots-animation;
+    }
+
+    span.dot2 {
+      @include dots-animation;
+      animation-delay: .4s;
+    }
+
+    span.dot3 {
+      @include dots-animation;
+      animation-delay: .8s;
+    }
+
+    @keyframes jumpingDots {
+      20% {
+        transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+
+  }
+}

@@ -1,0 +1,73 @@
+footer {
+    .footer-div1 {
+        background: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+
+        &:hover {
+            opacity: $opacity-hover;
+        }
+    }
+
+
+    .footer-div2 {
+        background: linear-gradient(-20deg, #dcb0ed 0%, #99c99c 100%, white 100%);
+
+        &:hover {
+            opacity: $opacity-hover;
+        }
+
+        &::after {
+            content: "...";
+            position: relative;
+            left: 1800px;
+            font-weight: bold;
+            font-size: 40px;
+
+            @media screen and (max-width:1650px) {
+                display: none;
+            }
+        }
+    }
+
+    .footer-inner {
+        div {
+            div {
+                div {
+                    a {
+                        color: black;
+
+                        &:hover {
+                            font-size: larger;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .ellipsis {
+        span.dot1 {
+            @include dots-animation;
+        }
+
+        span.dot2 {
+           @include dots-animation;
+            animation-delay: .4s;
+        }
+
+        span.dot3 {
+            @include dots-animation;
+            animation-delay: .8s;
+        }
+        @keyframes jumpingDots {
+            20% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+    }
+}

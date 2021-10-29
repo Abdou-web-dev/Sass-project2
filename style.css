@@ -1,0 +1,299 @@
+body nav {
+  background-color: burlywood;
+  margin-top: 20px;
+  border-radius: 10px;
+  -webkit-filter: blur(0.3px);
+          filter: blur(0.3px);
+}
+
+body nav a:hover {
+  border: 1px solid lightgrey;
+  padding: 10px;
+  -webkit-box-shadow: 5px rgba(128, 51, 51, 0.5);
+          box-shadow: 5px rgba(128, 51, 51, 0.5);
+  border-radius: 10px;
+  -webkit-transition: .8s ease;
+  transition: .8s ease;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 410px) {
+  body nav .navbar-toggler {
+    position: relative;
+    left: 90px;
+    top: 6px;
+  }
+}
+
+footer .footer-div1 {
+  background: -webkit-gradient(linear, left top, right top, from(#fa709a), to(#fee140));
+  background: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+
+footer .footer-div1:hover {
+  opacity: 0.88;
+}
+
+footer .footer-div2 {
+  background: linear-gradient(-20deg, #dcb0ed 0%, #99c99c 100%, white 100%);
+}
+
+footer .footer-div2:hover {
+  opacity: 0.88;
+}
+
+footer .footer-div2::after {
+  content: "...";
+  position: relative;
+  left: 1800px;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+@media screen and (max-width: 1650px) {
+  footer .footer-div2::after {
+    display: none;
+  }
+}
+
+footer .footer-inner div div div a {
+  color: black;
+}
+
+footer .footer-inner div div div a:hover {
+  font-size: larger;
+  color: white;
+}
+
+footer .ellipsis span.dot1 {
+  width: 15px;
+  height: 15;
+  margin: 0 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-animation-name: jumpingDots;
+          animation-name: jumpingDots;
+  -webkit-animation-duration: 1.4s;
+          animation-duration: 1.4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+footer .ellipsis span.dot2 {
+  width: 15px;
+  height: 15;
+  margin: 0 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-animation-name: jumpingDots;
+          animation-name: jumpingDots;
+  -webkit-animation-duration: 1.4s;
+          animation-duration: 1.4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
+}
+
+footer .ellipsis span.dot3 {
+  width: 15px;
+  height: 15;
+  margin: 0 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-animation-name: jumpingDots;
+          animation-name: jumpingDots;
+  -webkit-animation-duration: 1.4s;
+          animation-duration: 1.4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: .8s;
+          animation-delay: .8s;
+}
+
+@-webkit-keyframes jumpingDots {
+  20% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+}
+
+@keyframes jumpingDots {
+  20% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+}
+
+/*@use does not work */
+/* This CSS will print because %message-shared is extended. this is a silent or placeholder class, it's processed by Sass only when it's needed (extended) */
+body:hover {
+  opacity: .88;
+}
+
+section.main .ellipsis span.dot1 {
+  width: 15px;
+  height: 15;
+  margin: 0 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-animation-name: jumpingDots;
+          animation-name: jumpingDots;
+  -webkit-animation-duration: 1.4s;
+          animation-duration: 1.4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+section.main .ellipsis span.dot2 {
+  width: 15px;
+  height: 15;
+  margin: 0 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-animation-name: jumpingDots;
+          animation-name: jumpingDots;
+  -webkit-animation-duration: 1.4s;
+          animation-duration: 1.4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
+}
+
+section.main .ellipsis span.dot3 {
+  width: 15px;
+  height: 15;
+  margin: 0 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-animation-name: jumpingDots;
+          animation-name: jumpingDots;
+  -webkit-animation-duration: 1.4s;
+          animation-duration: 1.4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: .8s;
+          animation-delay: .8s;
+}
+
+@keyframes jumpingDots {
+  20% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+}
+
+section.main h1 {
+  font-size: 2.8em;
+  /*some math*/
+  padding-top: 30;
+  padding-bottom: 20;
+  font-family: Fruktur;
+}
+
+section.main h1:nth-child(1) {
+  color: burlywood;
+}
+
+section.main h1:nth-child(1):hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-transition: 2.5s ease;
+  transition: 2.5s ease;
+  background: -webkit-gradient(linear, left top, right top, from(#fa709a), to(#fee140));
+  background: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+  padding: 2px;
+}
+
+section.main h1:nth-child(1)::after {
+  content: '!!';
+}
+
+section.main ul li a {
+  color: black;
+}
+
+section.main ul li a:hover {
+  font-size: larger;
+  font-weight: bolder;
+}
+
+section.main ul.oceans li {
+  margin-bottom: 10px;
+}
+
+section.main ul.oceans li a:hover {
+  font-size: larger;
+  font-weight: bolder;
+  color: white;
+  font-variant: small-caps;
+}
+
+section.main a.click-me {
+  margin-left: 10px;
+}
+
+section.main .column2 img {
+  padding: 8px;
+  border-radius: 15px;
+}
+
+section.main .column2 img:hover {
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+  opacity: .85;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: .8s ease;
+  transition: .8s ease;
+}
+
+section.main .column3 {
+  background-color: lightblue;
+}
+
+section.main .column3:hover {
+  opacity: .88;
+  width: 360;
+  padding: 10px;
+  -webkit-transition: .6s ease;
+  transition: .6s ease;
+}
+
+section.main .column3 img:hover {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+/*# sourceMappingURL=style.css.map */
